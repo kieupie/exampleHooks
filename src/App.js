@@ -1,10 +1,10 @@
 import './App.css';
 
-import ExampleFunctionState from './useState/components/ExampleFunctional'
-import ExampleClassState from './useState/components/ExampleClass'
+import ExampleFunctionState from './useState/ExampleFunctional'
+import ExampleClassState from './useState/ExampleClass'
 
-import ExampleFunctionEffect from './useEffect/components/ExampleFunctional'
-import ExampleClassEffect from './useEffect/components/ExampleClass'
+import ExampleFunctionEffect from './useEffect/ExampleFunctional'
+import ExampleClassEffect from './useEffect/ExampleClass'
 
 import ExampleFuntionalMemo from './useMemo/ExampleFunctional';
 import ExampleClassMemo from './useMemo/ExampleClass';
