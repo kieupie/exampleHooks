@@ -14,7 +14,7 @@ export default class ExampleClass extends Component {
     console.log('Time starting');
     const start = new Date();
 
-    while (new Date() - start < 3000) //3s ~ 3000
+    while (new Date() - start < 1000) //3s ~ 3000
 
       console.log('Time ending', new Date() - start, 'ms');
 

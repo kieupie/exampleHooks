@@ -9,6 +9,9 @@ import ExampleClassEffect from './useEffect/ExampleClass'
 import ExampleFuntionalMemo from './useMemo/ExampleFunctional';
 import ExampleClassMemo from './useMemo/ExampleClass';
 
+import ExampleFuntionalCallback from './useCallback/ExampleFunctional';
+import ExampleClassCallback from './useCallback/ExampleClass';
+
 
 function App() {
   return (
@@ -34,6 +37,14 @@ function App() {
         <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           <ExampleFuntionalMemo />
           <ExampleClassMemo/>
+        </div>
+      </div>
+
+      <div className="bg-white p-8 rounded-md shadow-md space-y-6">
+        <p className="text-3xl font-extrabold text-center mb-6">useCallback Examples</p>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+          <ExampleFuntionalCallback />
+          <ExampleClassCallback/>
         </div>
       </div>
 
