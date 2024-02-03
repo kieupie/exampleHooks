@@ -1,7 +1,8 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 export default function ExampleFunctional() {
     const countRef = useRef(0);
+    const ref = useRef(null);
 
     const obj = {
         current: 0,
@@ -41,6 +42,13 @@ export default function ExampleFunctional() {
     //     }, 1000)
     // }, [])
 
+
+    //with DOM
+    console.log('ref', ref);
+    useEffect(() => {
+        ref.current.focus();
+    }, [])
+
     return (
         <div className="bg-gray-100 p-6 rounded-md shadow-md max-w-md mx-auto">
             <pre className="text-blue-500 font-semibold">Functional Component</pre>
@@ -53,6 +61,18 @@ export default function ExampleFunctional() {
                     className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300"
                 >
                     Add
+                </button>
+            </div>
+
+            <pre className="mt-[20px] font-semibold">with DOM</pre>
+
+            <div className='flex flex-row h-[38px]'>
+                <input type='text' ref={ref} className="font-bold mr-2"></input>
+                <button
+                    onClick={() => { }}
+                    className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300"
+                >
+                    Click
                 </button>
             </div>
         </div>
