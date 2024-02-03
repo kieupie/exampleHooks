@@ -17,6 +17,30 @@ export default function ExampleFunctional() {
 
     console.log(count, countRef, obj);
 
+
+    //Stale Closure issue
+    //Mới chỉ lưu trữ giá trị của count tại lúc vừa khởi tạo
+    //Không truy vấn để lưu trữ giá trị biến count mới nhất
+    //sau khi cập nhật với setCount
+    // ==> Giải quyết: useRef
+
+    //issue
+    // setInterval(() => {
+    //     setInterval(() => {
+    //         setCount(count + 1);
+    //         console.log(count);
+    //         console.log(`count: ${count}`);
+    //     }, 1000)
+    // }, [])
+
+    //resolve
+    // setInterval(() => {
+    //     setInterval(() => {
+    //         countRef.current = countRef.current + 1;
+    //         console.log(`countRef: ${countRef.current}`);
+    //     }, 1000)
+    // }, [])
+
     return (
         <div className="bg-gray-100 p-6 rounded-md shadow-md max-w-md mx-auto">
             <pre className="text-blue-500 font-semibold">Functional Component</pre>
