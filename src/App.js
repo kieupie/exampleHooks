@@ -14,6 +14,8 @@ import ExampleClassCallback from './useCallback/ExampleClass';
 
 import ExampleFuntionalRef from './useRef/ExampleFunctional';
 
+import ExampleFuntionalReducer from './useReducer/ExampleFunctional';
+
 function App() {
   return (
     <div className="grid grid-cols-1 items-center justify-center min-h-screen bg-gray-100">
@@ -53,6 +55,13 @@ function App() {
         <p className="text-3xl font-extrabold text-center mb-6">useRef Examples</p>
         <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           <ExampleFuntionalRef />
+        </div>
+      </div>
+
+      <div className="bg-white p-8 rounded-md shadow-md space-y-6">
+        <p className="text-3xl font-extrabold text-center mb-6">useReducer Examples</p>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+          <ExampleFuntionalReducer />
         </div>
       </div>
 
