@@ -15,6 +15,7 @@ import ExampleClassCallback from './useCallback/ExampleClass';
 import ExampleFuntionalRef from './useRef/ExampleFunctional';
 
 import ExampleFuntionalReducer from './useReducer/ExampleFunctional';
+import CustomHook from './customHooks/CustomHook'
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
 
       <div className="bg-white p-8 rounded-md shadow-md space-y-6">
         <p className="text-3xl font-extrabold text-center mb-6">useCallback Examples</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           <ExampleFuntionalCallback />
           <ExampleClassCallback />
         </div>
@@ -53,15 +54,22 @@ function App() {
 
       <div className="bg-white p-8 rounded-md shadow-md space-y-6">
         <p className="text-3xl font-extrabold text-center mb-6">useRef Examples</p>
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           <ExampleFuntionalRef />
         </div>
       </div>
 
       <div className="bg-white p-8 rounded-md shadow-md space-y-6">
         <p className="text-3xl font-extrabold text-center mb-6">useReducer Examples</p>
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
           <ExampleFuntionalReducer />
+        </div>
+      </div>
+
+      <div className="bg-white p-8 rounded-md shadow-md space-y-6">
+        <p className="text-3xl font-extrabold text-center mb-6">useReducer Examples</p>
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <CustomHook />
         </div>
       </div>
 
