@@ -16,6 +16,7 @@ import ExampleFuntionalRef from './useRef/ExampleFunctional';
 
 import ExampleFuntionalReducer from './useReducer/ExampleFunctional';
 import CustomHook from './customHooks/CustomHook'
+import ExampleContext from './contextAPI/ExampleContext'
 
 function App() {
   return (
@@ -73,6 +74,12 @@ function App() {
         </div>
       </div>
 
+      <div className="bg-white p-8 rounded-md shadow-md space-y-6">
+        <p className="text-3xl font-extrabold text-center mb-6">context API Examples</p>
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <ExampleContext />
+        </div>
+      </div>
     </div>
   );
 }
